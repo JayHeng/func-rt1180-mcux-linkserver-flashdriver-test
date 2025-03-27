@@ -52,3 +52,6 @@ Mkfile.old
 dkms.conf
 /.metadata/
 /.mcuxpressoide_packages_support/
+/AzureRTOS_TAD_logs/
+/FreeRTOS_TAD_logs/
+/ZephyrRTOS_TAD_logs/
