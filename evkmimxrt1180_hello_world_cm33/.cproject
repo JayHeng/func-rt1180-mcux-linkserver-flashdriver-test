@@ -673,7 +673,7 @@
 								<option id="com.crt.advproject.link.gcc.lto.1677006375" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1438767607" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level"/>
 								<option id="com.crt.advproject.link.manage.275809755" name="Manage linker script" superClass="com.crt.advproject.link.manage" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.link.script.412369004" name="Linker script" superClass="com.crt.advproject.link.script" value="evkmimxrt1180_hello_world_cm33_Debug.ld" valueType="string"/>
+								<option id="com.crt.advproject.link.script.412369004" name="Linker script" superClass="com.crt.advproject.link.script" value="evkmimxrt1180_hello_world_cm33_FSPI1_bt_Debug.ld" valueType="string"/>
 								<option id="com.crt.advproject.link.scriptdir.1730854055" name="Script path" superClass="com.crt.advproject.link.scriptdir"/>
 								<option id="com.crt.advproject.link.crpenable.676248079" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable"/>
 								<option id="com.crt.advproject.link.flashconfigenable.304848249" name="Enable automatic placement of Flash Configuration field in image" superClass="com.crt.advproject.link.flashconfigenable" value="true" valueType="boolean"/>
@@ -735,7 +735,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="Debug build" errorParsers="org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.crt.advproject.config.exe.debug.1821099188.183195658" name="FSPI2_raw_Debug" parent="com.crt.advproject.config.exe.debug" postannouncebuildStep="Performing post-build steps" postbuildStep="[ ! -f ../scripts/image_hash_tool.py ] &amp;&amp; : || ( echo &quot;${OsType}&quot; | grep -q win* &amp;&amp; py -3 ../scripts/image_hash_tool.py -a sha512 -x .boot_hdr -x .ARM.exidx -s .boot_hdr -o 0x1030 -l 64 -p 0x00 &quot;${BuildArtifactFileName}&quot; || python3 ../scripts/image_hash_tool.py -a sha512 -x .boot_hdr -x .ARM.exidx -s .boot_hdr -o 0x1030 -l 64 -p 0x00 &quot;${BuildArtifactFileName}&quot; )">
+				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="Debug build" errorParsers="org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.crt.advproject.config.exe.debug.1821099188.183195658" name="FSPI2_raw_Debug" parent="com.crt.advproject.config.exe.debug" postannouncebuildStep="Performing post-build steps" postbuildStep="">
 					<folderInfo id="com.crt.advproject.config.exe.debug.1821099188.183195658." name="/" resourcePath="">
 						<toolChain id="com.crt.advproject.toolchain.exe.debug.1151656118" name="NXP MCU Tools" superClass="com.crt.advproject.toolchain.exe.debug">
 							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.exe.debug.441436969" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.exe.debug"/>
@@ -1033,7 +1033,7 @@
 								<option id="com.crt.advproject.link.gcc.lto.1178213569" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.link.gcc.lto"/>
 								<option id="com.crt.advproject.link.gcc.lto.optmization.level.1019492415" name="Link-time optimization level" superClass="com.crt.advproject.link.gcc.lto.optmization.level"/>
 								<option id="com.crt.advproject.link.manage.339133347" name="Manage linker script" superClass="com.crt.advproject.link.manage" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.link.script.420016167" name="Linker script" superClass="com.crt.advproject.link.script" value="evkmimxrt1180_hello_world_cm33_Debug.ld" valueType="string"/>
+								<option id="com.crt.advproject.link.script.420016167" name="Linker script" superClass="com.crt.advproject.link.script" value="evkmimxrt1180_hello_world_cm33_FSPI2_raw_Debug.ld" valueType="string"/>
 								<option id="com.crt.advproject.link.scriptdir.677497717" name="Script path" superClass="com.crt.advproject.link.scriptdir"/>
 								<option id="com.crt.advproject.link.crpenable.889448865" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.crpenable"/>
 								<option id="com.crt.advproject.link.flashconfigenable.1615872944" name="Enable automatic placement of Flash Configuration field in image" superClass="com.crt.advproject.link.flashconfigenable" value="true" valueType="boolean"/>
