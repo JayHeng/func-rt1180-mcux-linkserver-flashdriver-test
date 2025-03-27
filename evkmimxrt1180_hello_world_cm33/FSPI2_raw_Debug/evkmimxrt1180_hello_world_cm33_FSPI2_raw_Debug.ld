@@ -16,32 +16,6 @@ ENTRY(ResetISR)
 
 SECTIONS
 {
-     /* Boot header - FCB, XMCD, Program Image Container for booting from external flash */
-    .boot_hdr : ALIGN(4)
-    {
-        FILL(0x00)
-        __boot_hdr_start__ = ABSOLUTE(.) ;
-
-        /* FCB */
-        . = 0x0400 ;
-        __boot_hdr_conf__ = ABSOLUTE(.) ;
-        KEEP(*(.boot_hdr.conf))
-
-        /* XMCD */
-        . = 0x0800 ;
-        __boot_hdr_xmcd__ = ABSOLUTE(.) ;
-        KEEP(*(.boot_hdr.xmcd_data))
-
-        /* Container */
-        . = 0x1000 ;
-        __boot_hdr_container__  =  ABSOLUTE(.) ;
-        KEEP(*(.boot_hdr.container))
-
-        . = 0xB000 ;
-        app_image_offset = (. - __boot_hdr_container__) ;
-        __boot_hdr_end__ = ABSOLUTE(.) ;
-    } >BOARD_FLASH
-
     /* MAIN TEXT SECTION */
     .text : ALIGN(4)
     {
