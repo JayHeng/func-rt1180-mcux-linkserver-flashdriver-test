@@ -1123,7 +1123,7 @@
 &lt;vendor&gt;NXP&lt;/vendor&gt;&#13;
 &lt;memory can_program="true" id="Flash" is_ro="true" size="0" type="Flash"/&gt;&#13;
 &lt;memory id="RAM" size="1536" type="RAM"/&gt;&#13;
-&lt;memoryInstance derived_from="Flash" driver="MIMXRT1180_SFDP_FlexSPI2_PriGr_A_QSPI.cfx" edited="true" id="BOARD_FLASH" location="0x4000000" size="0x1000000"/&gt;&#13;
+&lt;memoryInstance derived_from="Flash" driver="MIMXRT1180_SFDP_FlexSPI2_PriGr_B_QSPI.cfx" edited="true" id="BOARD_FLASH" location="0x4000000" size="0x1000000"/&gt;&#13;
 &lt;memoryInstance derived_from="RAM" edited="true" id="SRAM_DTC_cm33" location="0x20000000" size="0x20000"/&gt;&#13;
 &lt;memoryInstance derived_from="RAM" edited="true" id="SRAM_ITC_cm33" location="0xffe0000" size="0x20000"/&gt;&#13;
 &lt;memoryInstance derived_from="RAM" edited="true" id="SRAM_OC1_1H" location="0x20484000" size="0x3c000"/&gt;&#13;

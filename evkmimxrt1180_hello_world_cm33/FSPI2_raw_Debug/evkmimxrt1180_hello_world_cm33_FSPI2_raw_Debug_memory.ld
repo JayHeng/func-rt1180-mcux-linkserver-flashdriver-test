@@ -12,7 +12,7 @@
 MEMORY
 {
   /* Define each memory region */
-  BOARD_FLASH (rx) : ORIGIN = 0x4000000, LENGTH = 0x1000000 /* 16M bytes (alias Flash) */  
+  BOARD_FLASH (rx) : ORIGIN = 0x04000000, LENGTH = 0x1000000 /* 16M bytes (alias Flash) */  
   SRAM_DTC_cm33 (rwx) : ORIGIN = 0x20000000, LENGTH = 0x20000 /* 128K bytes (alias RAM) */  
   SRAM_ITC_cm33 (rwx) : ORIGIN = 0xffe0000, LENGTH = 0x20000 /* 128K bytes (alias RAM2) */  
   SRAM_OC1_1H (rwx) : ORIGIN = 0x20484000, LENGTH = 0x3c000 /* 240K bytes (alias RAM3) */  
@@ -24,10 +24,10 @@ MEMORY
 }
 
   /* Define a symbol for the top of each memory region */
-  __base_BOARD_FLASH = 0x4000000  ; /* BOARD_FLASH */  
-  __base_Flash = 0x4000000 ; /* Flash */  
-  __top_BOARD_FLASH = 0x4000000 + 0x1000000 ; /* 16M bytes */  
-  __top_Flash = 0x4000000 + 0x1000000 ; /* 16M bytes */  
+  __base_BOARD_FLASH = 0x04000000  ; /* BOARD_FLASH */  
+  __base_Flash = 0x04000000 ; /* Flash */  
+  __top_BOARD_FLASH = 0x04000000 + 0x1000000 ; /* 16M bytes */  
+  __top_Flash = 0x04000000 + 0x1000000 ; /* 16M bytes */  
   __base_SRAM_DTC_cm33 = 0x20000000  ; /* SRAM_DTC_cm33 */  
   __base_RAM = 0x20000000 ; /* RAM */  
   __top_SRAM_DTC_cm33 = 0x20000000 + 0x20000 ; /* 128K bytes */  
